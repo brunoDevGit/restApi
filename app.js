@@ -22,7 +22,7 @@ app.use((req, res, next) => {
         return res.status(200).send({});
     }
     next();
-})
+});
 
 app.use('/produtos', rotaProdutos);
 app.use('/pedidos', rotaPedidos);
