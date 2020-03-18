@@ -11,8 +11,13 @@ router.get('/', (req, res, next) => {
 });
 ///POST INSERIR
 router.post('/', (req, res, next) => {
+    const produto ={
+        nome: req.body.nome,
+        preco: req.body.preco
+    };
     res.status(201).send({
-        mensagem: "Usando o Post "
+        mensagem: "Produto Inserido ",
+        produtoCriado: produto
     })
 });
 //////GET POR ID
