@@ -2,7 +2,7 @@
   "name": "exercicios-express",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./api",
   "scripts": {
     "start": "nodemon",
     "production": "pm2 start index.js --name appx-backend"
